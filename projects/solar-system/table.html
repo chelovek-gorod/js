@@ -1,0 +1,185 @@
+<!DOCTYPE html>  <!-- HTML 5 -->
+
+<html lang="en-us"> <!-- Для Русскоязычного контента: lang="ru-RU" -->
+    
+    <head>
+        <meta charset="UTF-8"> <!-- Кодировка -->
+    
+        <title>First task - the Solar System</title>
+        <meta name="description" content="I take this task at first from EPAM">
+	
+        <link rel="shortcut icon" href="favicon.png" type="image/png"> <!-- Иконка -->
+        <link href="./css/style.css" rel="stylesheet" type="text/css"> <!-- Стили -->
+    
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"> <!-- Масштабирование для работы с адаптивной версткой -->
+    </head>
+
+    <body vocab="https://schema.org/" typeof="ScholarlyArticle" resource="#article">
+        <!-- (vocab="https://schema.org/") - ссылка на словарь ключей для разметки контента; (typeof="Article") - тип контента - статья. -->
+        
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript" >
+           (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+           m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+           (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        
+           ym(86518018, "init", {
+                clickmap:true,
+                trackLinks:true,
+                accurateTrackBounce:true,
+                webvisor:true
+           });
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/86518018" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <!-- /Yandex.Metrika counter -->
+
+        <!-- Шапка сайта -->
+        <header>
+            <div class="container" property="name"> <span>solar</span> <img id="logo" class="u-photo" src="./img/logo.png"> <span>system</span> </div>
+            <!-- (property="name") - указываем что тэг содержит заголовок -->
+            <!-- класс (u- *) - указывает на наличие ссылки; (u-photo) - ссылка на изображение-->
+        </header>
+
+        <div class="wrapper">
+
+            <!-- Основной блок с контентом -->
+            <main class="h-feed" property="articleBody">
+            <!-- класс (h- *) - корневой элемент микроразметки (верхний уровень, возможно содержащий вложения)-->
+            <!-- (-feed) - открытый формат для публикации основного содержания, ленты сообщений и пр. контента-->
+            <!-- (property="articleBody") - указываем что тэг содержит статью -->
+
+                <h1 class="p-name" property="headline">Planets of the Solar System</h1>
+                <!-- класс (p- *) - для свойств обычного текста; (p-name) - обозначение заголовков -->
+                <!-- (property="headline") - указываем на заголовок статьи -->
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td> Name </td>
+                            <td> Average orbital radius </td> 
+                            <td> Average radius </td>
+                            <td> Mass </td>
+                            <td> Satellites </td>
+                        </tr> 
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> Mercury </td>
+                            <td> 57 909 227 km </td> 
+                            <td> 2 440 km </td>
+                            <td> 3.33022 * 10<sup>23</sup> kg </td>
+                            <td> 0 </td>
+                        </tr>
+                        <tr>
+                            <td> Venus </td>
+                            <td> 108 208 930 km </td> 
+                            <td> 6 052 km </td>
+                            <td> 4.8675 * 10<sup>24</sup> kg </td>
+                            <td> 0 </td>
+                        </tr>
+                        <tr>
+                            <td> Earth </td>
+                            <td> 149 598 261 km </td> 
+                            <td> 6 371 km </td>
+                            <td> 5.9726 * 10<sup>24</sup> kg </td>
+                            <td> 1 </td>
+                        </tr>
+                        <tr>
+                            <td> Mars </td>
+                            <td> 2.27944 * 10<sup>8</sup> km </td> 
+                            <td> 3 389.5 km </td>
+                            <td> 6.4171 * 10<sup>23</sup> kg </td>
+                            <td> 2 </td>
+                        </tr>
+                        <tr>
+                            <td> Jupiter </td>
+                            <td> 7.7855 * 10<sup>8</sup> km </td> 
+                            <td> 69 911 km </td>
+                            <td> 1.8986 * 10<sup>27</sup> kg </td>
+                            <td> 79 </td>
+                        </tr>
+                        <tr>
+                            <td> Saturn </td>
+                            <td> 1.4294 * 10<sup>9</sup> km </td> 
+                            <td> 58 232 km </td>
+                            <td> 5.6846 * 10<sup>26</sup> kg </td>
+                            <td> 82 </td>
+                        </tr>
+                        <tr>
+                            <td> Uranus </td>
+                            <td> 2.87668 * 10<sup>9</sup> km </td> 
+                            <td> 25 362 km </td>
+                            <td> 8.6813 * 10<sup>25</sup> kg </td>
+                            <td> 27 </td>
+                        </tr>
+                        <tr>
+                            <td> Neptune </td>
+                            <td> 4.503444 * 10<sup>9</sup> km </td> 
+                            <td> 24 622 km </td>
+                            <td> 1.02432 * 10<sup>26</sup> kg </td>
+                            <td> 14 </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <section>
+                    <div class="source">
+                        <h3 class="p-name">Select table style</h3>
+
+                        <label for="colorWell">Border color:</label>
+                        <input class="changeColor" type="color" value="#4294f7" id="colorTBorder" onblur="changeTBC(this.value);">
+                        <span class="divider">&nbsp;&nbsp;</span>
+                        <label for="colorWell">Header color:</label>
+                        <input class="changeColor" type="color" value="#690c00" id="colorTHeader" onblur="changeTHC(this.value);">
+                        <span class="divider">&nbsp;&nbsp;</span>
+                        <label for="borderSize">Border weight:</label>
+                        <input type="range" value="2" id="borderSize" min="1" max="4" step="1" onchange="changeTBS(this.value);">
+                    </div>
+                    <br class="nobr"><br>
+                    <div class="source">
+                        <label for="tableOptions">Table Options:</label>
+                        <select id="tableOptions" onchange="changeTOS(this.value);">
+                            <option value="0">White & Light</option>
+                            <option selected value="1">Blue & Red</option>
+                            <option value="2">Silver & Gold</option>
+                        </select>
+                    </div>
+                </section>
+
+            </main>
+
+            <!-- Навигационное меню -->
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="history.html">History</a>
+                <a href="table.html" class="selected">Table</a>
+                <a  href="about.html">About</a>
+                <!-- класс (u-url) - указывает на то, что данный тег содержит ссылку на какой либо ресурс или сайт-->
+            </nav>
+
+        </div>
+
+        <!-- Подвал -->
+        <footer>
+            <div class="container">
+                <span id="divVsite" property="version"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                <!-- (property="version") - содерижит версию статьи/сайта -->
+                <span class="grey">Developer:</span> <span property="editor">Marsel Mirge</span>
+                <!-- (property="editor") - содерижит имя человека, редактирующего статью -->
+                <time id="divDate" datetime=""></time>
+                <!-- атрибут (datetime) - содерижит дату, в формате 2010-04-07T17:00 -->
+            </div>
+        </footer>
+
+        <!-- Подключение js после всего контента -->
+        <script src="./js/main.js"></script>
+        
+        <a href="/">
+            <div id="BIT-back"
+                style="position: fixed; right: -10px; bottom: 100px; padding: 6px 16px 4px 6px; background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 9px 6px #055977;">
+                <img style="height: 32px;" src="Bit-back.svg">
+            </div>
+        </a>
+
+    </body>
+</html>

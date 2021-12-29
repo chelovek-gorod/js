@@ -1,0 +1,333 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  background-image: url(../images/board-bg-half.png);
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                    not supported by any browser */
+}
+.container {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 20px;
+  max-width: 600px;
+}
+img {
+  animation: color360 3s linear infinite;
+  -webkit-animation: color360 3s linear infinite;
+}
+.static {
+  animation: none;
+  -webkit-animation: none;
+}
+.color1 {
+  filter: sepia(0) saturate(1) hue-rotate(0deg);
+  animation: none;
+  -webkit-animation: none;
+}
+.color2 {
+  filter: sepia(1) saturate(5) hue-rotate(0deg);
+  animation: none;
+  -webkit-animation: none;
+}
+.color3 {
+  filter: sepia(1) saturate(5) hue-rotate(60deg);
+  animation: none;
+  -webkit-animation: none;
+}
+.color4 {
+  filter: sepia(0) saturate(1) hue-rotate(230deg);
+  animation: none;
+  -webkit-animation: none;
+}
+.color5 {
+  filter: sepia(0) saturate(1) hue-rotate(280deg);
+  animation: none;
+  -webkit-animation: none;
+}
+.color6 {
+  filter: sepia(1) saturate(0) hue-rotate(0deg);
+  animation: none;
+  -webkit-animation: none;
+}
+.color7 {
+  filter: sepia(0) saturate(1) hue-rotate(70deg);
+  animation: none;
+  -webkit-animation: none;
+}
+.color8 {
+  filter: sepia(1) saturate(5) hue-rotate(120deg);
+  animation: none;
+  -webkit-animation: none;
+}
+.color9 {
+  filter: sepia(0) saturate(0.5) hue-rotate(20deg);
+  animation: none;
+  -webkit-animation: none;
+}
+.color10 {
+  filter: sepia(0) saturate(1) hue-rotate(320deg);
+  animation: none;
+  -webkit-animation: none;
+}
+.color11 {
+  filter: sepia(1) saturate(2) hue-rotate(0deg);
+  animation: none;
+  -webkit-animation: none;
+}
+.color12 {
+  filter: sepia(1) saturate(2) hue-rotate(100deg);
+  animation: none;
+  -webkit-animation: none;
+}
+.color13 {
+  filter: grayscale(100%) brightness(0.6);
+  animation: none;
+  -webkit-animation: none;
+}
+@keyframes color360 {
+  0% {
+    filter: sepia(0) saturate(1) hue-rotate(0deg);
+  }
+  40% {
+    filter: sepia(1) saturate(5) hue-rotate(60deg);
+  }
+  60% {
+    filter: sepia(1) saturate(5) hue-rotate(120deg);
+  }
+  80% {
+    filter: sepia(0) saturate(1) hue-rotate(230deg);
+  }
+  100% {
+    filter: sepia(0) saturate(1) hue-rotate(360deg);
+  }
+}
+#shell {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  background-image: url(../images/board-bg.png);
+  opacity: 1;
+  transition: opacity 0.6s ease-in-out;
+}
+#shell div {
+  position: relative;
+  top: 0;
+  width: 240px;
+  height: 80px;
+  color: #777777;
+  background-color: #ffffff;
+  border: solid 5px #777777;
+  border-radius: 40px;
+  text-align: center;
+  line-height: 70px;
+  font-size: 40px;
+  font-weight: 700;
+  box-shadow: 0px 3px 12px 3px #000000;
+  transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, top 0.3s ease-in-out;
+}
+#shell div:hover {
+  cursor: pointer;
+  top: -3px;
+  color: #c1c1c1;
+  box-shadow: 0px 6px 12px 3px #000000;
+}
+.top-bar {
+  margin: 0 auto 5%;
+  max-width: 96%;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr) 3fr repeat(6, 1fr);
+}
+.restart:hover {
+  cursor: pointer;
+}
+.restart:hover img {
+  animation: rotate-btn 0.6s linear infinite;
+  -webkit-animation: rotate-btn 0.6s linear infinite;
+}
+@keyframes rotate-btn {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.inner5 {
+  padding: 25%;
+}
+.inner4 {
+  padding: 20% 30% 20% 10%;
+}
+.inner3 {
+  padding: 15% 25% 15% 5%;
+}
+.inner2 {
+  padding: 10% 20% 10% 0;
+}
+.inner1 {
+  padding: 5% 0 5% 10%;
+}
+#scores {
+  font-size: 32px;
+  line-height: 34px;
+  text-align: right;
+  padding-right: 10px;
+}
+.stars {
+  padding: 10%;
+}
+#board {
+  margin: 5% auto;
+  max-width: 96%;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  overflow: hidden;
+}
+#board div {
+  background-image: url(../images/bg.png);
+  background-size: contain;
+  aspect-ratio: 1;
+  padding: 50%;
+  transition: padding 0.3s ease-in-out;
+}
+.open {
+  padding: 20% !important;
+}
+.bottom-bar {
+  margin: 5% auto 0;
+  max-width: 96%;
+  display: grid;
+  grid-template-columns: 7fr repeat(3, 1fr) 7fr;
+  font-size: 26px;
+}
+.best-name {
+  text-align: right;
+  padding-right: 10px;
+}
+.best-score {
+  text-align: left;
+  padding-left: 10px;
+}
+@media (max-width: 680px) {
+  #scores {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .best-name,
+  .best-score {
+    font-size: 18px;
+  }
+}
+@media (max-width: 460px) {
+  #scores {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .best-name,
+  .best-score {
+    font-size: 16px;
+  }
+}
+@media (max-width: 380px) {
+  #scores {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .best-name,
+  .best-score {
+    font-size: 14px;
+  }
+}

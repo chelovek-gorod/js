@@ -1,0 +1,178 @@
+<!DOCTYPE html>  <!-- HTML 5 -->
+
+<html lang="en-us"> <!-- Для Русскоязычного контента: lang="ru-RU" -->
+    
+    <head>
+        <meta charset="UTF-8"> <!-- Кодировка -->
+    
+        <title>First task - the Solar System</title>
+        <meta name="description" content="I take this task at first from EPAM">
+	
+        <link rel="shortcut icon" href="favicon.png" type="image/png"> <!-- Иконка -->
+        <link href="./css/style.css" rel="stylesheet" type="text/css"> <!-- Стили -->
+    
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"> <!-- Масштабирование для работы с адаптивной версткой -->
+    </head>
+
+    <body vocab="https://schema.org/" typeof="ScholarlyArticle" resource="#article">
+        
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript" >
+           (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+           m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+           (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        
+           ym(86518018, "init", {
+                clickmap:true,
+                trackLinks:true,
+                accurateTrackBounce:true,
+                webvisor:true
+           });
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/86518018" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <!-- /Yandex.Metrika counter -->
+        
+        <!-- (vocab="https://schema.org/") - ссылка на словарь ключей для разметки контента; (typeof="Article") - тип контента - статья. -->
+
+        <!-- Шапка сайта -->
+        <header>
+            <div class="container" property="name"> <span>solar</span> <img id="logo" class="u-photo" src="./img/logo.png"> <span>system</span> </div>
+            <!-- (property="name") - указываем что тэг содержит заголовок -->
+            <!-- класс (u- *) - указывает на наличие ссылки; (u-photo) - ссылка на изображение-->
+        </header>
+
+        <div class="main-wrap" property="articleBody">
+        <!-- (property="articleBody") - указываем что тэг содержит статью -->
+
+            <!-- Основной блок с контентом -->
+            <main class="h-feed">
+            <!-- класс (h- *) - корневой элемент микроразметки (верхний уровень, возможно содержащий вложения)-->
+            <!-- (-feed) - открытый формат для публикации основного содержания, ленты сообщений и пр. контента-->
+                <h1 class="p-name" property="headline">The Solar System</h1>
+                <!-- класс (p- *) - для свойств обычного текста; (p-name) - обозначение заголовков -->
+                <!-- (property="headline") - содержит заголовок статьи -->
+
+                <!-- (p-summary) - вводная информация-->
+                <p  class="p-summary">
+                    The Solar System is the gravitationally bound system of the Sun and the objects that orbit it, either directly or indirectly.
+                    Of the objects that orbit the Sun directly, the largest are the eight planets, with the remainder being smaller objects,
+                    the dwarf planets and small Solar System bodies. Of the objects that orbit the Sun indirectly—the moons—two are larger than
+                    the smallest planet, Mercury.
+                </p>
+                
+                <div class="e-content">
+                <!-- класс (e- *) - элемент содержащий вложения; (e-content) - основной контент-->
+                    <h2 class="p-name">Planets of the solar system</h2>
+                    <ol>
+                        <li>Mercury</li>
+                        <li>Venus</li>
+                        <li>Earth</li>
+                        <li>Mars</li>
+                        <li>Jupiter</li>
+                        <li>Saturn</li>
+                        <li>Uranus</li>
+                        <li>Neptune</li>
+                    </ol>
+                    <img class="u-photo righ-img" property="image" src="./img/planets.jpg" alt="8 planets of the solar system">
+                    <!-- класс (u- *) - указывает на наличие ссылки; (u-photo) - ссылка на изображение-->
+                    <!-- (property="image") - указывает на тематическое изображение-->
+                    <p>
+                        The Solar System formed 4.6 billion years ago from the gravitational collapse of a giant interstellar molecular cloud.
+                        The four smaller inner planets, <b>Mercury</b>, <b>Venus</b>, <b>Earth</b> and <b>Mars</b>, are terrestrial planets, being primarily
+                        composed of rock and metal. The four outer planets are giant planets, being substantially more massive than the terrestrials.
+                        The two largest planets, <b>Jupiter</b> and <b>Saturn</b>, are gas giants, being composed mainly of hydrogen and helium;
+                        the two outermost planets, <b>Uranus</b> and <b>Neptune </b>, are ice giants, being composed mostly of substances with relatively
+                        high melting points compared with hydrogen and helium, called volatiles, such as water, ammonia and methane.
+                        All eight planets have almost circular orbits that lie within a nearly flat disc called the ecliptic.
+                    </p>
+
+                    <h2 class="p-name">Small objects of the solar system</h2>
+                    <img class="u-photo left-img" property="image" src="./img/smallobj.jpg" alt="Small solar system objects">
+                    <p>
+                        The Solar System also contains smaller objects. The asteroid belt, which lies between the orbits of Mars and Jupiter, mostly contains
+                        objects composed, like the terrestrial planets, of rock and metal. Beyond Neptune's orbit lie the Kuiper belt and scattered disc,
+                        which are populations of trans-Neptunian objects composed mostly of ices, and beyond them a newly discovered population of sednoids.
+                        Within these populations, some objects are large enough to have rounded under their own gravity, though there is considerable debate
+                        as to how many there will prove to be. Such objects are categorized as dwarf planets. The only certain dwarf planet is Pluto,
+                        with another trans-Neptunian object, Eris, expected to be, and the asteroid Ceres at least close to being a dwarf planet.
+                        In addition to these two regions, various other small-body populations, including comets, centaurs and interplanetary dust clouds,
+                        freely travel between regions. Six of the planets, the six largest possible dwarf planets, and many of the smaller bodies are orbited
+                        by natural satellites, usually termed <i>"moons"</i> after the <b>Moon</b>. Each of the outer planets is encircled by planetary rings of dust
+                        and other small objects.
+                    </p>
+
+                    <h2 class="p-name">Some facts about Solar system</h2>
+                    <img class="u-photo righ-img" property="image" src="./img/suningalaxy.jpg" alt="Solar system in Milky Way galaxy">
+                    <p>
+                        The solar wind, a stream of charged particles flowing outwards from the Sun, creates a bubble-like region in the interstellar
+                        medium known as the heliosphere. The heliopause is the point at which pressure from the solar wind is equal to the opposing
+                        pressure of the interstellar medium; it extends out to the edge of the scattered disc. The Oort cloud, which is thought
+                        to be the source for long-period comets, may also exist at a distance roughly a thousand times further than the heliosphere.
+                        The Solar System is located in the Orion Arm, 26,000 light-years from the center of the Milky Way galaxy.
+                    </p>
+                </div>
+
+            </main>
+            
+            <!-- Навигационное меню -->
+            <nav>
+                <a href="index.html" class="selected">Home</a>
+                <a href="history.html">History</a>
+                <a href="table.html">Table</a>
+                <a  href="about.html">About</a>
+                <!-- класс (u-url) - указывает на то, что данный тег содержит ссылку на какой либо ресурс или сайт-->
+            </nav>
+
+            <!-- Новостная панель на главной странице -->
+            <aside class="news-bar">
+                <div class="news-bar-header">News feed</div>
+                <div class="news-list">
+                    <a class="news" href="https://www.nasa.gov/feature/goddard/2020/detailing-the-formation-of-distant-solar-systems-with-nasas-webb-telescope" target="_blank">
+                        <span class="news-date">Dec. 16, 2020</span>
+                        <span class="news-title">Detailing the Formation of Distant Solar Systems with NASA's Webb Telescope</span>
+                        <span class="news-description">We live in a mature solar system — eight planets and several dwarf planets (like Pluto)
+                            have formed, the latter within the rock- and ...</span>
+                    </a>
+                    <a class="news" href="https://www.nasa.gov/image-feature/starry-starry-night" target="_blank">
+                        <span class="news-date">Dec. 16, 2020</span>
+                        <span class="news-title">Starry, Starry Night</span>
+                        <span class="news-description">The Hubble Space Telescope captured a crowd of stars that looks rather
+                            like a stadium darkened before a show, lit only ...</span>
+                    </a>
+                    <a class="news" href="https://www.nasa.gov/feature/jpl/3-things-weve-learned-from-nasas-mars-insight" target="_blank">
+                        <span class="news-date">Dec. 16, 2020</span>
+                        <span class="news-title">3 Things We've Learned From NASA's Mars InSight</span>
+                        <span class="news-description">NASA's InSight spacecraft touched down Nov. 26, 2018, on Mars to study
+                            the planet's deep interior. A little more than ...</span>
+                    </a>
+                </div>
+            </aside>
+
+        </div>
+        
+        <div style="height:10px;"></div>
+
+        <!-- Подвал -->
+        <footer>
+            <div class="container">
+                <span id="divVsite" property="version"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                <!-- (property="version") - содерижит версию статьи/сайта -->
+                <span class="grey">Developer:</span> <span property="editor">Marsel Mirge</span>
+                <!-- (property="editor") - содерижит имя человека, редактирующего статью -->
+                <time id="divDate" datetime=""></time>
+                <!-- атрибут (datetime) - содерижит дату, в формате 2010-04-07T17:00 -->
+            </div>
+        </footer>
+
+        <!-- Подключение js после всего контента -->
+        <script src="./js/main.js"></script>
+        
+         <a href="/">
+            <div id="BIT-back"
+                style="position: fixed; right: -10px; bottom: 100px; padding: 6px 16px 4px 6px; background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 9px 6px #055977;">
+                <img style="height: 32px;" src="Bit-back.svg">
+            </div>
+        </a>
+
+    </body>
+</html>

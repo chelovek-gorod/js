@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="46px" height="193px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 1.458 6.118"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:black;stroke-width:0.063;stroke-miterlimit:22.9256}
+    .fil0 {fill:none}
+    .fil1 {fill:blue}
+    .fil2 {fill:white}
+
+    .nocolor {fill:none}
+    .color1 {fill:#ff0000}
+    .color2 {fill:#00ff00}
+    .color3 {fill:#0000ff}
+    .color4 {fill:#ffff00}
+    .color5 {fill:#ff00ff}
+    .color6 {fill:#00ffff}
+    .color7 {fill:#777777}
+    
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0" width="1.458" height="6.118"/>
+  
+  <path class="fil2 str0" d="M0.159 0.333l1.141 0 0 5.009c0,0.278 -0.229,0.507 -0.507,0.507l-0.127 0c-0.279,0 -0.507,-0.229 -0.507,-0.507l0 -5.009z"/>
+  <rect class="fil2 str0" x="0.063" y="0.206" width="1.331" height="0.127" rx="0.222" ry="0.095"/>
+
+  <rect id="colbColor9" class="nocolor" x="0.254" y="0.428" width="0.951" height="0.476"/>
+  <rect id="colbColor8" class="nocolor" x="0.254" y="0.967" width="0.951" height="0.476"/>
+  <rect id="colbColor7" class="nocolor" x="0.254" y="1.506" width="0.951" height="0.476"/>
+  <rect id="colbColor6" class="nocolor" x="0.254" y="2.045" width="0.951" height="0.476"/>
+  <rect id="colbColor5" class="nocolor" x="0.254" y="2.584" width="0.951" height="0.476"/>
+  <rect id="colbColor4" class="nocolor" x="0.254" y="3.122" width="0.951" height="0.476"/>
+  <rect id="colbColor3" class="nocolor" x="0.254" y="3.661" width="0.951" height="0.476"/>
+  <rect id="colbColor2" class="nocolor" x="0.254" y="4.2" width="0.951" height="0.476"/>
+  <rect id="colbColor1" class="nocolor" x="0.254" y="4.739" width="0.951" height="0.476"/>
+  <path id="colbColor0" class="nocolor" d="M0.254 5.278l0.951 0c0,0.263 -0.213,0.476 -0.476,0.476 -0.263,0 -0.475,-0.213 -0.475,-0.476z"/>
+  
+ </g>
+</svg>

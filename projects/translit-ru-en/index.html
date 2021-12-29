@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Translit</title>
+        <meta name="description" content="Get strings for URL and others">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style/style.css?123" type="text/css">
+
+        <link rel="icon" href="favicon.png"> <!--32х32-->
+
+        <link rel="apple-touch-icon" href="icons/touch-icon-iphone.png"> <!--60х60-->
+        <link rel="apple-touch-icon" sizes="76x76" href="icons/touch-icon-ipad.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="icons/touch-icon-iphone-retina.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="icons/touch-icon-ipad-retina.png">
+    </head>
+    <body>
+        
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript" >
+           (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+           m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+           (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        
+           ym(86518018, "init", {
+                clickmap:true,
+                trackLinks:true,
+                accurateTrackBounce:true,
+                webvisor:true
+           });
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/86518018" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <!-- /Yandex.Metrika counter -->
+        
+        <div class="container">
+
+            <h1>Translit</h1>
+
+            <div class="halfDiv">
+                <span id="capsLabelTitle" class="labelDescription">USE CAPS LOCK</span>
+                <label class="switch"><input id="capsLockInput" type="checkbox"><span class="slider round"></span></label>
+            </div>
+
+            <div class="halfDiv">
+                <span id="spacesLabelTitle" class="labelDescription">USING SPACES</span>
+                <label class="switch"><input id="spacesLockInput" type="checkbox"><span class="slider round"></span></label>
+            </div>
+
+            <div class="fullDiv">
+                <label><span id="userInputTitle" class="inputDescription">INPUT YOU STRING</span>
+                    <input id="inputString" type="text">
+                </label>
+
+                <label><span id="userOutputTitle" class="inputDescription">GET RESULT STRING</span>
+                    <input id="outputString" type="text">
+                </label>
+
+                <button onclick="convertInput();">Convert text</button>
+                <button onclick="outputCopyClick();">Copy result</button>
+
+            </div>
+        
+        </div>
+          
+        <script src="js/main.js"></script>
+        
+        <a href="/">
+            <div id="BIT-back"
+                style="position: fixed; right: -10px; bottom: 100px; padding: 6px 16px 4px 6px; background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 9px 6px #055977;">
+                <img class="static" style="height: 32px;" src="Bit-back.svg">
+            </div>
+        </a>
+
+    </body>
+</html>

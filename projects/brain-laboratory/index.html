@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Brain laboratory</title>
+        <link rel="stylesheet" href="style/style.css">
+        <meta http-equiv="Cache-Control" content="no-cache">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript" >
+           (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+           m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+           (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        
+           ym(86518018, "init", {
+                clickmap:true,
+                trackLinks:true,
+                accurateTrackBounce:true,
+                webvisor:true
+           });
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/86518018" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <!-- /Yandex.Metrika counter -->
+        
+        <div class="container">
+            <div id="data-box">
+                <img id="soundImg" src="images/sound-on.svg" onclick="changeSoundPlay();">
+                <span class="fires">X<span id="fires">0</span></span>
+                <span class="scores">SCORES:<span id="scores">0</span></span>
+                <img id="restart" src="images/restart.svg" onclick="document.location.reload();">
+            </div>
+            
+            <object id="tapsImg" type="image/svg+xml" data="images/taps.svg" onload="tapsImgLoaded();"></object>
+
+            <object class="colb left" id="colb0" type="image/svg+xml" data="images/colb.svg" onload="colbsImgLoaded(0)"></object>
+            <object class="colb" id="colb1" type="image/svg+xml" data="images/colb.svg" onload="colbsImgLoaded(1)"></object>
+            <object class="colb" id="colb2" type="image/svg+xml" data="images/colb.svg" onload="colbsImgLoaded(2)"></object>
+            <object class="colb" id="colb3" type="image/svg+xml" data="images/colb.svg" onload="colbsImgLoaded(3)"></object>
+            <object class="colb right" id="colb4" type="image/svg+xml" data="images/colb.svg" onload="colbsImgLoaded(4)"></object>
+
+            <img class="fire left" id="fire0" src="images/fireBTN.svg" onclick="clickFire(0)">
+            <img class="fire" id="fire1" src="images/fireBTN.svg" onclick="clickFire(1)">
+            <img class="fire" id="fire2" src="images/fireBTN.svg" onclick="clickFire(2)">
+            <img class="fire" id="fire3" src="images/fireBTN.svg" onclick="clickFire(3)">
+            <img class="fire right" id="fire4" src="images/fireBTN.svg" onclick="clickFire(4)">
+
+        </div>
+        <div id="shell"><div onclick="start();">START</div></div>
+        <script src="main.js"></script>
+        
+        <a href="/">
+            <div id="BIT-back"
+                style="position: fixed; right: -10px; top: 4vh; padding: 6px 16px 0 6px; background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 9px 6px #055977; z-index: 4">
+                <img style="height: 18px;" src="Bit-back.svg">
+            </div>
+        </a>
+        
+    </body>
+</html>

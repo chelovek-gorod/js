@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+            xmlns:dc="http://purl.org/dc/elements/1.1/">
+
+  <!-- описание главной страницы -->
+  <rdf:Description rdf:about="https://chelovek-gorod.github.io/epamTraining/task-02/index.html">
+    <dc:title>The Solar System</dc:title>
+    <dc:Creator>Marsel Mirge</dc:Creator>
+    <dc:Description>The Solar System formed 4.6 billion years ago from the gravitational collapse of a giant interstellar molecular cloud.
+      The four smaller inner planets, Mercury, Venus, Earth and Mars, are terrestrial planets, being primarily composed of rock and metal.
+      The four outer planets are giant planets, being substantially more massive than the terrestrials. The two largest planets, Jupiter
+      and Saturn, are gas giants, being composed mainly of hydrogen and helium; the two outermost planets, Uranus and Neptune, are ice giants,
+      being composed mostly of substances with relatively high melting points compared with hydrogen and helium, called volatiles, such as water,
+      ammonia and methane. All eight planets have almost circular orbits that lie within a nearly flat disc called the ecliptic. </dc:Description>
+    <dc:Publisher>National Aeronautics and Space Administration</dc:Publisher>
+    <dc:Subject>
+      <rdf:Bag>
+	<rdf:li>Planets of the solar system</rdf:li>
+	<rdf:li>Small objects of the solar system</rdf:li>
+  <rdf:li>Some facts about Solar system</rdf:li>
+      </rdf:Bag>
+    </dc:Subject>
+    <dc:Type>Electronic Document</dc:Type>
+    <dc:Format>text/html</dc:Format>
+    <dc:Language>en</dc:Language>
+
+  </rdf:Description>
+
+  <!-- описание страницы history -->
+  <rdf:Description rdf:about="https://chelovek-gorod.github.io/epamTraining/task-02/history.html">
+    <dc:title>Formation and evolution of Solar System</dc:title>
+    <dc:Creator>Marsel Mirge</dc:Creator>
+    <dc:Description>The Solar System formed 4.568 billion years ago from the gravitational collapse of a region within a large molecular cloud.
+      This initial cloud was likely several light-years across and probably birthed several stars. As is typical of molecular clouds, this one
+      consisted mostly of hydrogen, with some helium, and small amounts of heavier elements fused by previous generations of stars. </dc:Description>
+    <dc:Publisher>National Aeronautics and Space Administration</dc:Publisher>
+    <dc:Type>Electronic Document</dc:Type>
+    <dc:Format>text/html</dc:Format>
+    <dc:Language>en</dc:Language>
+
+  </rdf:Description>
+
+  <!-- описание страницы table -->
+  <rdf:Description rdf:about="https://chelovek-gorod.github.io/epamTraining/task-02/table.html">
+    <dc:title>Planets of the Solar System</dc:title>
+    <dc:Creator>Marsel Mirge</dc:Creator>
+    <dc:Publisher>National Aeronautics and Space Administration</dc:Publisher>
+    <dc:Subject>
+      <rdf:Bag>
+	<rdf:li>Mercury</rdf:li>
+	<rdf:li>Venus</rdf:li>
+  <rdf:li>Earth</rdf:li>
+	<rdf:li>Mars</rdf:li>
+  <rdf:li>Jupiter</rdf:li>
+	<rdf:li>Saturn</rdf:li>
+  <rdf:li>Uranus</rdf:li>
+	<rdf:li>Neptune</rdf:li>
+      </rdf:Bag>
+    </dc:Subject>
+    <dc:Type>Electronic Document</dc:Type>
+    <dc:Format>text/html</dc:Format>
+    <dc:Language>en</dc:Language>
+
+  </rdf:Description>
+
+  <!-- описание страницы about -->
+  <rdf:Description rdf:about="https://chelovek-gorod.github.io/epamTraining/task-02/about.html">
+    <dc:title>About author of the site</dc:title>
+    <dc:Creator>
+      <v:Name>Marsel Mirge</v:Name>
+      <v:Email>chelovek-gorod@yandex.by</v:Email>
+    </dc:Creator>
+    <dc:Type>Electronic Document</dc:Type>
+    <dc:Format>text/html</dc:Format>
+    <dc:Language>en</dc:Language>
+
+  </rdf:Description>
+
+</rdf:RDF>

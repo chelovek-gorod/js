@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="73px" height="84px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 5.505 6.335"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    polygon { transition: fill .6s ease-in-out; }
+    polygon:hover { fill: #00FF00; }
+   ]]>
+  </style>
+ </defs>
+ <g id="group_hex">
+  <metadata id="hex"/>
+  <polygon fill="#000000" class="base" points="2.753,0 4.129,0.792 5.505,1.584 5.505,3.167 5.505,4.751 4.129,5.543 2.753,6.335 1.376,5.543 0,4.751 0,3.167 0,1.584 1.376,0.792 "/>
+  <polygon fill="#CCCCCC" class="board-1" points="5.145,1.614 4.59,1.99 2.877,1.001 2.925,0.332 "/>
+  <polygon fill="#AAAAAA" class="board-2" points="5.279,4.449 4.676,4.156 4.676,2.178 5.279,1.885 "/>
+  <polygon fill="#888888" class="board-3" points="2.915,5.98 2.868,5.311 4.581,4.322 5.136,4.698 "/>
+  <polygon fill="#666666" class="board-4" points="0.399,4.707 0.954,4.331 2.667,5.32 2.619,5.989 "/>
+  <polygon fill="#444444" class="board-5" points="0.226,1.885 0.83,2.178 0.83,4.156 0.226,4.449 "/>
+  <polygon fill="#222222" class="board-6" points="2.61,0.322 2.658,0.991 0.945,1.98 0.389,1.604 "/>
+  <polygon fill="#000000" class="main" points="2.753,1.215 3.601,1.703 4.449,2.191 4.449,3.167 4.449,4.144 3.601,4.632 2.753,5.12 1.904,4.632 1.056,4.144 1.056,3.167 1.056,2.191 1.904,1.703 "/>
+ </g>
+</svg>

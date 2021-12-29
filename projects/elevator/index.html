@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Elevator</title>
+        <meta name="description" content="Choose your floor and go to it">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="style/style.css?123" type="text/css">
+
+        <link rel="icon" href="favicon.png"> <!--32х32-->
+
+        <link rel="apple-touch-icon" href="icons/touch-icon-iphone.png"> <!--60х60-->
+        <link rel="apple-touch-icon" sizes="76x76" href="icons/touch-icon-ipad.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="icons/touch-icon-iphone-retina.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="icons/touch-icon-ipad-retina.png">
+    </head>
+    <body>
+        
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript" >
+           (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+           m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+           (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        
+           ym(86518018, "init", {
+                clickmap:true,
+                trackLinks:true,
+                accurateTrackBounce:true,
+                webvisor:true
+           });
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/86518018" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <!-- /Yandex.Metrika counter -->
+        
+        <div id="back" class="slow-speed">
+
+            <div id="elevator">
+
+                <div class="button-board">
+                    <div id="screen">0 &uarr;</div>
+                    <img class="screen-shell" src="./image/screen-shell.png"/>
+
+                    <div class="floor-button" id="floor5" onClick="newFloor(this);">5</div>
+                    <div class="floor-button" id="floor4" onClick="newFloor(this);">4</div>
+                    <div class="floor-button" id="floor3" onClick="newFloor(this);">3</div>
+                    <div class="floor-button" id="floor2" onClick="newFloor(this);">2</div>
+                    <div class="floor-button" id="floor1" onClick="newFloor(this);">1</div>
+                    <div class="floor-button" id="floor0" onClick="newFloor(this);">0</div>
+
+                    <div id="setNewBG" onClick="newBG();">NEW</div>
+                </div>
+
+            </div>
+
+        </div>
+                        
+        <script src="js/main.js"></script>
+        
+        <a href="/">
+            <div id="BIT-back"
+                style="position: fixed; right: -10px; bottom: 30px; padding: 6px 16px 4px 6px; background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 9px 6px #055977;">
+                <img style="height: 32px;" src="Bit-back.svg">
+            </div>
+        </a>
+
+    </body>
+</html>

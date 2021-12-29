@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  /**/
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
+                                not supported by any browser */
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+}
+canvas {
+  background: center center url("../src/images/bg/bg-3.jpg");
+  background-size: cover;
+}

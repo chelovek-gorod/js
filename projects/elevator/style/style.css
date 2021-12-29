@@ -1,0 +1,283 @@
+@font-face { font-family: Roboto-Black; src: url('Roboto-Black.ttf'); }
+@font-face { font-family: Roboto-Regular; src: url('Roboto-Regular.ttf'); }
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto-Regular, Arial, sans-serif;
+    text-align: center;
+    color: #ffffff;
+    background-color: #000000;
+    overflow: hidden;
+    /**/
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                not supported by any browser */
+    opacity: 0;
+    transition: 1.2s opacity ease-in-out;
+}
+
+#back {
+    width: 786px;
+    height: 1024px;
+    background-image: url('../image/bg-1.jpg');
+    background-position-x: center;
+    background-position-y: bottom;
+    background-size: inherit;
+}
+
+.slow-speed {
+    transition: 2.4s background-position-y ease-in-out;
+}
+
+.fast-speed {
+    transition: 3.6s background-position-y ease-in-out;
+}
+
+.jump-speed {
+    transition: 0s background-position-y ease-in-out;
+}
+
+#elevator {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url('../image/diagonal-elevator-no-buttons.png');
+    background-size: cover;
+    perspective: 500px;
+    transform-style: flat;
+}
+
+.button-board {
+    position: absolute;
+    left: 186px;
+    top: 312px;
+    width: 40px;
+    height: 208px;
+    box-sizing: border-box;
+    background-color: #777777cc;
+    border: solid 2px #ccc;
+    border-radius: 10px;
+    transform: rotateY(20deg);
+}
+
+#screen {
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 31px;
+    height: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: #333333;
+    color: #00ff00;
+    border-radius: 6px;
+    line-height: 21px;
+}
+
+.screen-shell {
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 31px;
+    height: 20px;
+    box-sizing: border-box;
+    border: solid 2px #a9a9a9;
+    border-radius: 6px;
+}
+
+.floor-button {
+    position: absolute;
+    left: 8px;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: #333333;
+    border: solid 2px #a9a9a9;
+    color: #a9a9a9;
+    border-radius: 10px;
+    line-height: 18px;
+    transition: 0.3s color ease-in-out, 0.3s border ease-in-out;
+    cursor: pointer;
+}
+
+#floor5 { top: 30px; }
+#floor4 { top: 55px; }
+#floor3 { top: 80px; }
+#floor2 { top: 105px; }
+#floor1 { top: 130px; }
+#floor0 { top: 155px; }
+
+#setNewBG {
+    position: absolute;
+    left: 3px;
+    bottom: 3px;
+    width: 31px;
+    height: 20px;
+    box-sizing: border-box;
+    font-size: 10px;
+    font-weight: 700;
+    background-color: #333333;
+    border: solid 2px #a9a9a9;
+    color: #a9a9a9;
+    border-radius: 6px;
+    line-height: 16px;
+    transition: 0.3s color ease-in-out, 0.3s border ease-in-out;
+    cursor: pointer;
+}
+
+.floor-button.activeButton, #setNewBG.activeButton {
+    border-color: #00ff00;
+    color: #00ff00;
+}
+
+@media (max-width: 768px) {
+    
+    #back {
+        width: 576px;
+        height: 768px;
+    }
+
+    .button-board {
+        left: 138px;
+        top: 220px;
+        width: 32px;
+        height: 170px;
+        border-radius: 8px;
+    }
+    
+    #screen {
+        left: 2px;
+        top: 2px;
+        width: 25px;
+        height: 17px;
+        font-size: 11px;
+        border-radius: 5px;
+        line-height: 18px;
+    }
+
+    .screen-shell {
+        left: 2px;
+        top: 2px;
+        width: 25px;
+        height: 17px;
+        border-radius: 5px;
+    }
+    
+    .floor-button {
+        left: 5px;
+        width: 18px;
+        height: 18px;
+        font-size: 11px;
+        border-radius: 8px;
+        line-height: 16px;
+    }
+    
+    #floor5 { top: 22px; }
+    #floor4 { top: 43px; }
+    #floor3 { top: 64px; }
+    #floor2 { top: 85px; }
+    #floor1 { top: 106px; }
+    #floor0 { top: 127px; }
+    
+    #setNewBG {
+        position: absolute;
+        left: 2px;
+        bottom: 2px;
+        width: 25px;
+        height: 16px;
+        font-size: 9px;
+        border-radius: 5px;
+        line-height: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    #back {
+        width: 384px;
+        height: 512px;
+    }
+
+    .button-board {
+        left: 89px;
+        top: 124px;
+        width: 30px;
+        height: 136px;
+        border-width: 1px;
+        border-radius: 5px;
+        transform: rotateY(24deg);
+    }
+
+    #screen {
+        left: 2px;
+        top: 2px;
+        width: 23px;
+        height: 16px;
+        font-size: 10px;
+        border-radius: 3px;
+        line-height: 14px;
+    }
+
+    .screen-shell {
+        left: 2px;
+        top: 2px;
+        width: 23px;
+        height: 16px;
+        border-width: 1px;
+        border-radius: 3px;
+    }
+    
+    .floor-button {
+        left: 6px;
+        width: 15px;
+        height: 15px;
+        font-size: 10px;
+        border-width: 1px;
+        border-radius: 7px;
+        line-height: 13px;
+    }
+    
+    #floor5 { top: 19px; }
+    #floor4 { top: 35px; }
+    #floor3 { top: 51px; }
+    #floor2 { top: 67px; }
+    #floor1 { top: 83px; }
+    #floor0 { top: 99px; }
+    
+    #setNewBG {
+        position: absolute;
+        left: 2px;
+        bottom: 3px;
+        width: 23px;
+        height: 13px;
+        font-size: 8px;
+        border-width: 1px;
+        border-radius: 3px;
+        line-height: 14px;
+    }
+}
+
+@media (max-width: 384px) {
+    #back {
+        width: 256px;
+        height: 341px;
+    }
+
+    .button-board {
+        left: 54px;
+        top: 100px;
+        transform: rotateY(33deg);
+    }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Калькулятор окуляров для телескопа</title>
+    <meta name="description" content="Расчет окуляров и увеличений для любых видов телескопа">
+	
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link href='./src/style.css' rel='stylesheet' type='text/css'>
+    
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0">
+</head>
+<body>
+    
+    <!-- Yandex.Metrika counter -->
+        <script type="text/javascript" >
+           (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+           m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+           (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        
+           ym(86518018, "init", {
+                clickmap:true,
+                trackLinks:true,
+                accurateTrackBounce:true,
+                webvisor:true
+           });
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/86518018" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <!-- /Yandex.Metrika counter -->
+    
+    <img id="telescopeImg" weight="200" height="200" src="./src/images/tr_.svg" onclick="change('it')">
+    
+    <div class="t-main">
+        <h2>ТЕЛЕСКОП</h2>
+        <br>
+        <label><input type="radio" name="ttype" value="0" id="tt0" onchange="change('t0')" checked>Линзовый</label>
+        <label><input type="radio" name="ttype" value="1" id="tt1" onchange="change('t1')" >Зеркальный</label>
+        <label><input type="radio" name="ttype" value="2" id="tt2" onchange="change('t2')" >Зеркально-линзовый</label>        
+        <br><br>
+        <label>D = <input type="text" id="telescopeD" size="1" value="70" maxlength="5" onchange="change('td')"> мм |
+            <span class="dreal"></span>F = <input type="text" id="telescopeF" size="1" value="700" maxlength="6" onchange="change('tf')"> мм</label>
+        <label><span id="spanK">корректировка параметров:<br> D<sub>k</sub> = <span id="telescopeDk">70.00</span> мм |
+            F<sub>k</sub> = <span id="telescopeFk">700.00</span> мм</span></label>
+        <label>Фокусер: <select id="telescopeIn" onchange="change('ti')">
+                        <option selected value="31.75">1.25"</option>
+                        <option value="50.8">2"</option>'
+                     </select></label>
+    </div>
+    
+    <div class="t-about">
+        Характеристики телескопа: <nobr> f/<span id="ff">10.0</span> | r=<span id="rr">2.00</span>" | <span id="mm">11.3</span>m</nobr><br>
+        Различимый размер кратеров на Луне <span id="mk">7.5</span>км<br>
+        <br>
+        <h2>Рекомендуемые увеличения</h2>
+        <b>2.0 D :</b> <span id="x20d">140</span> X <nobr> (f = <span id="f20d">5.0</span>мм , выходной зрачок = <span id="e20d">0.5</span>мм)</nobr><br>
+        <b>1.5 D :</b> <span id="x15d">119</span> X <nobr> (f = <span id="f15d">5.9</span>мм , выходной зрачок = <span id="e15d">0.6</span>мм)</nobr><br>
+        <b>1.0 D :</b> <span id="x10d">70</span> X <nobr> (f = <span id="f10d">10.0</span>мм , выходной зрачок = <span id="e10d">1.0</span>мм)</nobr><br>
+        <b>0.7 D :</b> <span id="x07d">49</span> X <nobr> (f = <span id="f07d">14.3</span>мм , выходной зрачок = <span id="e07d">1.4</span>мм)</nobr><br>
+        <b>D / 2 :</b> <span id="x05d">35</span> X <nobr> (f = <span id="f05d">20.0</span>мм , выходной зрачок = <span id="e05d">2.0</span>мм)</nobr><br>
+        <b>D / 3 :</b> <span id="x03d">23</span> X <nobr> (f = <span id="f03d">30.0</span>мм , выходной зрачок = <span id="e03d">3.0</span>мм)</nobr><br>
+        <b>D / 6 :</b> <span id="x02d">12</span> X <nobr> (f = <span id="f02d">60.0</span>мм , выходной зрачок = <span id="e02d">6.0</span>мм)</nobr><br>
+    </div>
+    
+    
+    <div class="eyepice">
+        <h2>ОКУЛЯР</h2>
+        <br><br>        
+        <label>f = <input type="text" id="eyepiceF" size="1" value="10.0" maxlength="4" onchange="changeEye('ef')"> мм |
+            x = <input type="text" id="eyepiceX" size="1" value="70.0" maxlength="4" onchange="changeEye('ex')"> крат</label>
+        <label>Обзор = <input type="text" id="eyepiceA" size="1" value="40.0" maxlength="4" onchange="changeEav()"> &#176; |
+            Вид = <span id="eyepiceV">0.57</span> &#176;</label><br>
+        <label>Выходной зрачок: <input type="text" id="eyepiceE" size="1" value="1.00" maxlength="4" onchange="changeEye('ee')"> мм</label>
+        <label>Отношение к апертуре: <input type="text" id="eyepiceD" size="1" value="1.00" maxlength="4" onchange="changeEye('ed')"> D</label>
+        <br><br>
+        <label><input type="checkbox" name="barlouName" value="true" id="barlou" onchange="change('bc')">
+            <b>Линзу Барлоу</b> X <input type="text" id="barlouX" size="1" value="2.00" maxlength="5" onchange="change('bx')"> крат
+        </label>
+    </div>
+     
+    <div class="main-v">
+        <h2>НАБЛЮДАЕМ: <select id="planets" onchange="changePlanet()"><option selected value="jupiter">Юпитер</option></select>
+            <select id="ps" onchange="reCalckEyepice()">
+                <option value="0">min</option>
+                <option selected value="1">Mid</option>
+                <option value="2">MAX</option>
+            </select></h2>
+        <br>
+        <div id="eyepice-border"><div id="eyepice"></div></div>
+    </div>
+    
+    <script src="./src/astro.js"></script>
+    
+    <a href="/">
+        <div id="BIT-back"
+            style="position: fixed; right: -10px; bottom: 100px; padding: 6px 16px 4px 6px; background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 9px 6px #055977;">
+            <img style="height: 32px;" src="Bit-back.svg">
+        </div>
+    </a>
+
+</body>
+</html>

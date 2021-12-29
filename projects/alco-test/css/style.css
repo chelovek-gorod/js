@@ -1,0 +1,250 @@
+/***************************************************
+*
+*   USED COLORS 
+*
+*   #ff0000  -mainRed
+*   #000000  -mainBlack
+*
+*/
+
+* {font-family: 'Arial', sans-serif; margin: 0; padding: 0;
+    /* запрет на выделение и подсветку кликов : */ user-select: none; outline: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+}
+body {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #000000;
+    background-image: url("../img/bg5.jpg");
+    
+}
+
+a {
+    text-decoration:none;
+}
+
+/* HEADER */
+header {
+    height:60px;
+    width:100%;
+    background-color: #000000;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 0 5px 0 #ff0000;
+}
+
+header::after {
+    content: "";
+    display: block;
+    height:120px;
+    width:240px;
+    margin: 0 auto;
+    background-color: #000000;
+    border-radius: 0 0 120px 120px;
+    box-shadow: 0 0 5px 0 #ff0000;
+}
+
+menu {
+    position: relative;
+    width: 800px;
+    height:60px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #000000;
+}
+
+.left-menu-block {
+    position: absolute;
+    top:10px;
+    left:10px;
+    width:320px;
+    height:40px;
+}
+
+header img {
+    width:200px;
+    height: 100px;
+    margin-top: 30px;
+}
+
+.right-menu-block {
+    position: absolute;
+    top:10px; right:10px;
+    width:320px;
+    height:40px;
+}
+
+.in-out {
+    position: absolute;
+    top:0;
+    right:0;
+    width:40px;
+    height:40px;
+    background-image: url(/img/out.png);
+}
+
+.in-out:hover {
+    background-image: url(/img/in.png);
+}
+
+header a {
+    line-height: 40px;
+    color: #ffffff;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+header a:hover {
+    color: #ff0000;
+}
+
+/* MAIN */
+info {
+    display: block;
+    width: 800px;
+    margin: 0 auto;
+    padding: 220px 0 120px 0;
+    color:#000000;
+} 
+
+#windowContainer {
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 12px;
+    box-shadow: 0 0 5px 0 #ff0000;
+}
+
+#windowTitle {
+    height: 24px;
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+
+#windowSubtitle {
+    height: 22px;
+    padding: 18px;
+    color: #dddddd;
+    font-size: 22px;
+    text-align: center;
+}
+
+#windowContent {
+    width: 540px;
+    margin: 10px auto;
+    padding: 20px;
+    font-size: 16px;
+    text-align: center;
+    background-color: #cdcdcd;
+    border-radius: 12px;
+    box-shadow: inset 0 0 10px 0 #000000;
+}
+
+.registration {
+    display: inline-block;
+    padding: 5px;
+}
+
+#regButton, #startTest, #endTest {
+    position: relative;
+    bottom: 6px;
+    padding: 8px 60px;
+    font-weight: 900;
+    color: #ffffff;
+    background-color: #ff0000;
+    border-radius: 15px;
+    transition: color .3s ease-in-out;
+}
+
+#regButton:hover, #startTest:hover, #endTest:hover {
+    color: #c7c7c7;
+}
+                
+.registration #button {
+    width: 160px;
+    height: 40px;
+    font-weight: 900;
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 15px;
+    transition: color .3s ease-in-out;
+}
+
+.registration #button:hover {
+    color: #ff0000;
+}
+
+.registration #restTest {
+    width: 160px;
+    height: 30px;
+    font-size: 12px;
+    color: #ff0000;
+    background-color: #dddddd;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.registration #restTest:hover {
+    color: #000000;
+}
+
+#goonTest, #returnTest {
+    width: 160px;
+    height: 30px;
+    font-size: 12px;
+    color: #000000;
+    background-color: #dddddd;
+    border-radius: 15px;
+    transition: color .3s ease-in-out;
+}
+
+#goonTest:hover, #returnTest:hover {
+    color: #ff0000;
+}
+
+.questions-left {
+    color: #ffffff;
+}
+
+/* FOOTER */
+footer {
+    position: fixed;
+    bottom: 0;
+    width:100%;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #000000;
+    box-shadow: 0 0px 5px 0 #ff0000;
+}
+
+footer span {
+    color: #ff0000;
+}
+
+@media (max-width: 800px){
+    menu { width: auto;}
+    .left-menu-block, .right-menu-block {width:50%;}
+    info {width: 90%; padding: 220px 0 0 0;}
+    #windowContainer {width: 80%;}
+    #windowContent {width: 70%;}
+    #regButton, #startTest, #endTest {padding: 8px 10px;}
+}
+
+@media (max-width: 600px){
+    header, menu {height: 40px;}
+    .left-menu-block {top:0; left: 20px; text-align:left;}
+    .right-menu-block {top:0; right: 20px; text-align:right;}
+    header::after {height: 80px; width: 160px;}
+    header img {width:120px; height: 60px; margin-top: 10px;}
+    info {width: 92%; padding: 125px 0 0 0;}
+    #windowContainer {width: 88%;}
+    #windowContent {width: 84%;}
+    #windowTitle {font-size:24px;}
+    #windowSubtitle {padding: 12px; font-size:18px;}
+}

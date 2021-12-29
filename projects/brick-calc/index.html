@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru_RU">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Калькулятор забора</title>
+        <meta name="description" content="Калькулятор забора из бетонного кирпича">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" href="favicon.png"> <!--32х32-->
+
+        <link rel="apple-touch-icon" href="icons/touch-icon-iphone.png"> <!--60х60-->
+        <link rel="apple-touch-icon" sizes="76x76" href="icons/touch-icon-ipad.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="icons/touch-icon-iphone-retina.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="icons/touch-icon-ipad-retina.png">
+    </head>
+    <body style="font-family: 'Arial', sans-serif; ser-select: none; outline: none; -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-tap-highlight-color: transparent;">
+        
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript" >
+           (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+           m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+           (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        
+           ym(86518018, "init", {
+                clickmap:true,
+                trackLinks:true,
+                accurateTrackBounce:true,
+                webvisor:true
+           });
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/86518018" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <!-- /Yandex.Metrika counter -->
+
+        <div style="max-width: 1120px; width: 80%; margin: 10px auto;">
+            
+            <h1 style="text-align: center;">Калькулятор забора из бетонного кирпича</h1>
+            
+            <div id="about" style="display: none; width: 80%; margin: 0 auto;">
+    
+                <p>
+                Данный калькулятор позволит Вам расчитать необходимое количество кирпичей для будущего забора,
+                а также подобрать форму и размеры столбов.
+                Выбирайте типы кирпичей, число столбов и пролетов, размер шва и общую длину забора
+                (без учета ширину ворот, калитки и прочих элементов).
+                </p>
+                    <strong>Как это работает:</strong><br><br>
+                <lu>
+                    <li>Изменяйте элементы забора (шов, типы кирпича, форму столбов) кликая по соответствующим картинкам
+                        либо кнопками "<span style="color: #5baa00;" ><b>+</b></span>" или "<span style="color: #5baa00;" ><b>-</b></span>"</li><br>
+                    <li>Укажите количество элементов забора (столбов и пролетов) заполнив соответствующие поля</li><br>
+                    <li>Включите или отключите опцию учета ширины столбов в общей ширине забора
+                        (кнопка "<span style="color: #5baa00;" ><b>v</b></span>", под указанием числа столбов и пролетов)</li><br>
+                    <li>Укажите в кирпичах либо в метрах высоту столбов, пролетов, и общую длину забора</li><br>
+                    <li>Нажмите "<span style="color: #5baa00;" ><b>Рассчитать</b></span>", для получения конечного количества кирпича</li><br>
+                </lu>
+    
+                <p>
+                Внося изменения в любой из параметров, другие связанные с ним параметры
+                пересчитываются автоматически.<br>
+                (например меняя размер шва - изменятся размеры столбов, пролетов, и длина всего забора)
+                </p>
+            
+            </div>
+            <div id="about-hide" style="width: 80%; text-align: center; margin: 0 auto; padding: 0 10px; font-size: 24px; font-weight: 700; border: solid 2px #ab7a0f; border-radius: 20px;">Развернуть описание</div>
+
+            <h3 style="text-align: center; font-size: 18pt; color: #959595;">Выберите исходные <span style="color: #996633;">параметры элементов</span> для Вашего <span style="color: #996633;">забора:</span></h3>
+            <br><br>
+
+            <!-- ПЕРВЫЙ РЯД КНОПОК -->
+            <div style="width: 100%; margin: 10 auto;" align="center">
+
+            <!-- ТОЛЩИНА ШВА -->
+                <div align="center" style="display: inline-block; max-width: 260px; margin: 10 auto;">
+                    <img alt="Толщина швов" src="./calckimg/key-s-010.png" title="Сменить" style="width: 100%; height: auto; cursor: pointer" id="id-img-key-s" onclick="imgKeySeam();">
+                    <p style="margin-top:-10px; text-align: center; color: #aaa;">Толщина швов:</p>
+                    <div style="float: left; width: 60px; text-align: right;">
+                        <img alt="-" src="./calckimg/minus-on.png" title="Сменить" style="width: 20px; height: auto; cursor: pointer" id="id-min-key-s" onclick="minKeySeam();">
+                    </div>
+                    <div style="float: left; width: 130px; margin-top: 2px; text-align: center; color: #000;">
+                        <span id="id-txt-key-s">10</span> мм<br><br>
+                    </div>
+                    <div style="float: left; width: 30px; text-align: left;">
+                        <img alt="+" src="./calckimg/plus-on.png" title="Сменить" style="width: 20px; height: auto; cursor: pointer" id="id-plu-key-s" onclick="pluKeySeam();">
+                    </div>
+                </div>
+
+            <!-- КИРПИЧ ПРОЛЕТА -->
+                <div align="center" style="display: inline-block; max-width: 260px; margin: 10 auto;">
+                    <img alt="Кирпич для пролета" src="./calckimg/key-k-4.png" title="Сменить" style="width: 100%; height: auto; cursor: pointer" id="id-img-key-kp" onclick="imgKeySpanBrick();">
+                    <p style="margin-top:-10px; text-align: center; color: #aaa;">Кирпич для пролетов:</p>
+                    <div style="float: left; width: 60px; text-align: right;">
+                        <img alt="-" src="./calckimg/minus-on.png" title="Сменить" style="width: 20px; height: auto; cursor: pointer" id="id-min-key-kp" onclick="minKeySpanBrick();">
+                    </div>
+                    <div style="float: left; width: 130px; margin-top: 2px; text-align: center; color: #000;" id="id-txt-key-kp" >
+                        250 х 120 х 65 мм<br>гладкий<br><br><br>
+                    </div>
+                    <div style="float: left; width: 30px; text-align: left;">
+                        <img alt="+" src="./calckimg/plus-on.png" title="Сменить" style="width: 20px; height: auto; cursor: pointer" id="id-plu-key-kp" onclick="pluKeySpanBrick();">
+                    </div>
+                </div>
+
+            <!-- КИРПИЧ СТОЛБА -->
+                <div align="center" style="display: inline-block; max-width: 260px; margin: 10 auto;">
+                    <img alt="Кирпич для столбов" src="./calckimg/key-k-2.png" title="Сменить" style="width: 100%; height: auto; cursor: pointer" id="id-img-key-ks" onclick="imgKeyPillarBrick();">
+                    <p style="margin-top:-10px; text-align: center; color: #aaa;">Кирпич для столбов:</p>
+                    <div style="float: left; width: 60px; text-align: right;">
+                        <img alt="-" src="./calckimg/minus-on.png" title="Сменить" style="width: 20px; height: auto; cursor: pointer" id="id-min-key-ks" onclick="minKeyPillarBrick();">
+                    </div>
+                    <div style="float: left; width: 130px; margin-top: 2px; text-align: center; color: #000;" id="id-txt-key-ks">
+                        230 х 100 х 65 мм<br>колотый двусторонний<br><br>
+                    </div>
+                    <div style="float: left; width: 30px; text-align: left;">
+                        <img alt="+" src="./calckimg/plus-on.png" title="Сменить" style="width: 20px; height: auto; cursor: pointer" id="id-plu-key-ks" onclick="pluKeyPillarBrick();">
+                    </div>
+                </div>
+
+            <!-- ФОРМА СТОЛБА -->
+                <div align="center" style="display: inline-block; max-width: 260px; margin: 10 auto;">
+                    <img alt="Форма столбов" src="./calckimg/key-stolb-2.png" title="Сменить" style="width: 100%; height: auto; cursor: pointer" id="id-img-key-st" onclick="imgKeyPillarType();">
+                    <p style="margin-top:-10px; text-align: center; color: #aaa;">Форма столбов:</p>
+                    <div style="float: left; width: 60px; text-align: right;">
+                        <img alt="-" src="./calckimg/minus-on.png" title="Сменить" style="width: 20px; height: auto; cursor: pointer" id="id-min-key-st" onclick="minKeyPillarType();">
+                    </div>
+                    <div style="float: left; width: 130px; margin-top: 2px; text-align: center; color: #000;">
+                        <span id="id-txt-key-st">2 х 1,5 кирпича</span><br>
+                        <span style="color: #aaa;">
+                        <span id="id-txt-width-st">470</span> х <span id="id-txt-length-st">340</span> мм
+                        </span><br><br>
+                    </div>
+                    <div style="float: left; width: 30px; text-align: left;">
+                        <img alt="+" src="./calckimg/plus-on.png" title="Сменить" style="width: 20px; height: auto; cursor: pointer" id="id-plu-key-st" onclick="pluKeyPillarType();">
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ВТОРОЙ РЯД КНОПОК -->
+            <div style="width: 100%; margin: 10 auto;" align="center">
+
+            <!-- КОЛИЧЕСТВО ЭЛЕМЕНТОВ -->
+                <div align="center" style="display: inline-block; vertical-align: top; max-width: 260px; margin: 10 auto;">
+                    <img alt="Количество столбов" src="./calckimg/input-elements-number.png" title="Сменить" style="width: 100%; height: auto; cursor: pointer" id="id-img-input-elements-number" onclick="imgInpPNum();">
+                    <p style="margin-top:-10px; text-align: center; color: #aaa;">Количество элементов:</p>
+                    
+                    <input type="text" id="id-input-spans-number" size="3" value="1" maxlength="2" onchange="inputSpansNumber()" class="my-inpyt"> число пролетов<br>
+                    <div style="margin-top: 2px;"></div>
+                    <input type="text" id="id-input-pillars-number" size="3" value="2" maxlength="2" onchange="inputPillarsNumber()" class="my-inpyt"> число столбов<span style="color: #FFF">н</span><br>
+                    <div style="float: left; width: 30px; text-align: right;">
+                        <img alt="v" src="./calckimg/included-on.png" title="Сменить" style="width: 20px; height: auto; cursor: pointer" id="id-checked-key" onclick="checkedKey();">
+                    </div>
+                    <div style="float: left; width: 180px; margin-top: 2px; text-align: center; color: #000; cursor: pointer;" id="id-txt-checked-key" onclick="checkedKey();">
+                        Включить ширину столбов в учет длины забора<br><br><br>
+                    </div>
+                    
+                </div>
+
+            <!-- ВЫСОТА ПРОЛЕТОВ -->
+                <div align="center" style="display: inline-block; vertical-align: top; max-width: 260px; margin: 10 auto;">
+                    <img alt="Высота пролетов" src="./calckimg/input-height-span.png" title="Сменить" style="width: 100%; height: auto; cursor: pointer" id="id-img-input-height-span" onclick="imgInpHSpan();">
+                    <p style="margin-top:-10px; text-align: center; color: #aaa;">Высота пролетов:</p>
+                    
+                    <input type="text" id="id-input-height-span-meters" size="8" value="1.875" maxlength="5" onchange="inputHeightSpanMeters()" class="my-inpyt"> метров<br>
+                    <div style="margin-top: 2px;"></div>
+                    <input type="text" id="id-input-height-span-bricks" size="3" value="25" maxlength="2" onchange="inputHeightSpanBricks()" class="my-inpyt"> шт. кирпича<span style="color: #FFF">.</span><br><br><br>
+                    
+                </div>
+
+            <!-- ВЫСОТА СТОЛБОВ -->
+                <div align="center" style="display: inline-block; vertical-align: top; max-width: 260px; margin: 10 auto;">
+                    <img alt="Высота столбов" src="./calckimg/input-height-pillars.png" title="Сменить" style="width: 100%; height: auto; cursor: pointer" id="id-img-input-height-pillar" onclick="imgInpHPillar();">
+                    <p style="margin-top:-10px; text-align: center; color: #aaa;">Высота столбов:</p>
+                    
+                    <input type="text" id="id-input-height-pillar-meters" size="8" value="2.025" maxlength="5" onchange="inputHeightPillarMeters()" class="my-inpyt"> метров<br>
+                    <div style="margin-top: 2px;"></div> 
+                    <input type="text" id="id-input-height-pillar-bricks" size="3" value="27" maxlength="2" onchange="inputHeightPillarBricks()" class="my-inpyt"> шт. кирпича<span style="color: #FFF">.</span><br><br><br>
+                    
+                </div>
+
+            <!-- ДЛИНА ВСЕГО ЗАБОРА -->
+                <div align="center" style="display: inline-block; vertical-align: top; max-width: 260px; margin: 10 auto;">
+                    <img alt="Длина всего забора" src="./calckimg/input-perimeter-fence.png" title="Сменить" style="width: 100%; height: auto; cursor: pointer" id="id-img-input-perimeter-fence" onclick="imgInpPerFen();">
+                    <p style="margin-top:-10px; text-align: center; color: #aaa;">Длина всего забора:</p>
+
+                    <input type="text" id="id-input-perimeter-fence-meters" size="9" value="3.550" maxlength="7" onchange="inputPerimeterMeters()" class="my-inpyt"> метров<span style="color: #FFF"></span><br>
+                    <div style="margin-top: 2px;"></div>
+                    <input type="text" id="id-input-perimeter-fence-bricks" size="4" value="14.0" maxlength="6" onchange="inputPerimeterBricks()" class="my-inpyt"> шт. кирпича<span style="color: #FFF">|</span>
+                    <div style="float: left; width: 100%; margin-top: 2px; text-align: center; color: #AAA;"><span id="id-txt-checked-in-perimeter">
+                        С учетом ширины столбов</span><br><span style="color: #000">Ширину ворот не учитывать</span><br><br><br>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+            <div align="center"> 
+            <input type="button" id="button-calculate" style="background: #5baa00; height:50px; width:130px; border-radius:20px; line-height:12px; color: #ffffff; font-size: 12pt; cursor: pointer;" value="Рассчитать " onclick="Calculate()">
+            </div>
+
+            <p style="color: #AAA; width: 80%; margin: 20px auto;" id="id-out-calculation-txt">	
+            Все введенные Вами размеры округляются в большую сторону. <br>
+            Длина забора округляется кратно половине длины кирпича. <br>
+            Высота столбов и пролетов округляется до высоты целого кирпича.
+            </p>
+
+        </div>
+
+        <script src="brick-calc.js"></script>
+        
+        <a href="/">
+            <div id="BIT-back"
+                style="position: fixed; right: -10px; bottom: 100px; padding: 6px 16px 4px 6px; background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 9px 6px #055977;">
+                <img style="height: 32px;" src="Bit-back.svg">
+            </div>
+        </a>
+
+    </body>
+</html>

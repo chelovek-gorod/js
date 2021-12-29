@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hexagones</title>
+        <link rel="stylesheet" href="style/style.css">
+        <meta http-equiv="Cache-Control" content="no-cache">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript" >
+           (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+           m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+           (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        
+           ym(86518018, "init", {
+                clickmap:true,
+                trackLinks:true,
+                accurateTrackBounce:true,
+                webvisor:true
+           });
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/86518018" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <!-- /Yandex.Metrika counter -->
+        
+        <div class="container">
+            <div id="data-box">
+                
+                <img id="restart" src="images/restart.svg" onclick="document.location.reload();">
+                <img id="soundImg" src="images/sound-on.svg" onclick="changeSoundPlay();">
+                
+                <div class="data-line">
+                    <object id="hex1" class="data-line-object" type="image/svg+xml" data="images/hex.svg" onload="hexLoaded(1)"></object>
+                    <object id="hex2" class="data-line-object" type="image/svg+xml" data="images/hex.svg" onload="hexLoaded(2)"></object>
+                    <object id="hex3" class="data-line-object" type="image/svg+xml" data="images/hex.svg" onload="hexLoaded(3)"></object>
+                </div>
+            </div>
+            
+            <object id="hexes" type="image/svg+xml" data="images/hexes.svg" onload="hexLoaded(0);"></object>
+
+        </div>
+        
+        <div id="shell"><div onclick="start();">START</div></div>
+        
+        <script src="main.js"></script>
+        
+        <a href="/">
+            <div id="BIT-back"
+                style="position: fixed; right: -10px; bottom: 30px; padding: 6px 16px 4px 6px; background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 9px 6px #055977;">
+                <img style="height: 32px;" src="Bit-back.svg">
+            </div>
+        </a>
+        
+    </body>
+</html>

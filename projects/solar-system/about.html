@@ -1,0 +1,128 @@
+<!DOCTYPE html>  <!-- HTML 5 -->
+
+<html lang="en-us"> <!-- Для Русскоязычного контента: lang="ru-RU" -->
+    
+    <head>
+        <meta charset="UTF-8"> <!-- Кодировка -->
+    
+        <title>First task - the Solar System</title>
+        <meta name="description" content="I take this task at first from EPAM">
+	
+        <link rel="shortcut icon" href="favicon.png" type="image/png"> <!-- Иконка -->
+        <link href="./css/style.css" rel="stylesheet" type="text/css"> <!-- Стили -->
+    
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"> <!-- Масштабирование для работы с адаптивной версткой -->
+    </head>
+
+    <body vocab="https://schema.org/" typeof="ScholarlyArticle" resource="#article">
+        
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript" >
+           (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+           m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+           (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+        
+           ym(86518018, "init", {
+                clickmap:true,
+                trackLinks:true,
+                accurateTrackBounce:true,
+                webvisor:true
+           });
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/86518018" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <!-- /Yandex.Metrika counter -->
+        
+        <!-- (vocab="https://schema.org/") - ссылка на словарь ключей для разметки контента; (typeof="Article") - тип контента - статья. -->
+
+        <!-- Шапка сайта -->
+        <header>
+            <div class="container" property="name"> <span>solar</span> <img id="logo" class="u-photo" src="./img/logo.png"> <span>system</span> </div>
+            <!-- (property="name") - указываем что тэг содержит заголовок -->
+            <!-- класс (u- *) - указывает на наличие ссылки; (u-photo) - ссылка на изображение-->
+        </header>
+
+        <div class="wrapper">
+
+            <!-- Основной блок с контентом -->
+            <main>
+                <div class="vcard">
+                    <!-- класс (vcard) - указывает на блок с информацией о объекте (авторе/ организации и прочие): Название/имя, адрес, почта и пр.-->
+                    <h1 class="p-name">About author of the site</h1>
+                    <div class="about">
+                        <span class="item">Name: </span><span class="fn" property="editor">Marsel Mirhe<br></span> <!-- класс (fn) - указывает на то, что тег содержит имя-->
+                                                            <!-- (property="editor") - содерижит имя человека, редактирующего статью -->
+                        <span class="item">Location: </span><span class="locality">Belarus, Gomel<br></span> <!-- класс (locality) - указывает на локацию-->
+                        <span class="item">Tel: </span><span class="tel">+375 25 528 21 39<br></span> <!-- класс (tel) - указывает на то, что содержит телефон-->
+                        <span class="item">Email: </span><span class="email">chelovek-gorod@yandex.by<br></span> <!-- класс (email) - указывает на то, что содержит email-->
+                    </div>
+                    <img class="photo righ-img" src="./img/marsel.jpg" alt="8 planets of the solar system">
+                </div>
+
+                <h3 class="p-name">Write to the author</h3>
+                <form>
+                    <label class="cm-email cm-required" for="email">Your e-mail: </label><input type="email" id="email" onblur="endInput(this.value, this.id)"><br><br>
+                    <!-- класс (cm-email) - указывает на то, что данное поле формы предназначено для ввода email-->
+                    <!-- класс (cm-required) - указывает на то, что поле обязательно для заполнения-->
+                    <label class="cm-required" for="message">Your message:</label><textarea rows="4" id="message" onblur="endInput(this.value, this.id)"></textarea><br>
+                    <input class="cm-cancel" type="reset" value="Clear"> <input class="cm-submit" type="button" value="Send" onclick="clickSend(this.form);" id="formSend">
+                    <!-- класс (cm-cancel) - указывает на то, что данный элемент формы очищает ее поля-->
+                    <!-- класс (cm-submit) - указывает на то, что данный элемент формы производит отправку введенных в нее данных-->
+                </form>
+
+                <section>
+                    <div class="source">Source:  <a class="u-url" property="isBasedOn" typeof = "WebSite" href="https://en.wikipedia.org/wiki/Solar_System" target="_blank">
+                    <!-- (property="isBasedOn") - на чем основано содержание сайта, (typeof = "WebSite") - тип источника - сайт -->
+                        Wikipedia | Solar System</a></div>
+
+                    <br>
+                    <h2 class="p-name">External links</h2>
+                    <ul>
+                        <li><a class="u-url" property="isBasedOn" typeof = "WebSite" href="https://en.wikisource.org/wiki/1911_Encyclop%C3%A6dia_Britannica/Solar_System" target="_blank">"Solar System" . Encyclopedia Britannica. 25 (11th ed.). 1911. pp. 157–158.</a></li>
+                        <li><a class="u-url" property="isBasedOn" typeof = "WebSite" href="https://web.archive.org/web/20140426232154/http://logic-law.com/index.php?title=A_Cosmic_History_of_Human_Evolution#Development_of_the_Solar_System" target="_blank">"A Cosmic History of the Solar System.</a></li>
+                        <li><a class="u-url" property="isBasedOn" typeof = "WebSite" href="https://joshworth.com/a-tediously-accurate-map-of-the-solar-system/" target="_blank">"A Tediously Accurate Map of the Solar System (web based scroll map scaled to the Moon being 1 pixel).</a></li>
+                        <li><a class="u-url" property="isBasedOn" typeof = "WebSite" href="https://solarsystem.nasa.gov/" target="_blank">"NASA's Solar System Exploration.</a></li>
+                        <li><a class="u-url" property="isBasedOn" typeof = "WebSite" href="https://solarsystem.nasa.gov/solar-system/our-solar-system/overview/" target="_blank">"NASA's Solar System Profile.</a></li>
+                        <li><a class="u-url" property="isBasedOn" typeof = "WebSite" href="https://space.jpl.nasa.gov/" target="_blank">"NASA's Solar System Simulator.</a></li>
+                        <li><a class="u-url" property="isBasedOn" typeof = "WebSite" href="https://eyes.nasa.gov/apps/orrery/#/home" target="_blank">"NASA Eyes-on-the-Solar-System.</a></li>
+                        <li><a class="u-url" property="isBasedOn" typeof = "WebSite" href="https://solarsystem.nasa.gov/" target="_blank">"NASA/JPL Solar System main page.</a></li>
+                        <!-- класс (u-url) - указывает на то, что данный тег содержит ссылку на какой либо ресурс или сайт-->
+                    </ul>
+                </section>
+
+            </main>
+
+            <!-- Навигационное меню -->
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="history.html">History</a>
+                <a href="table.html">Table</a>
+                <a  href="about.html" class="selected">About</a>
+                <!-- класс (u-url) - указывает на то, что данный тег содержит ссылку на какой либо ресурс или сайт-->
+            </nav>
+
+        </div>
+
+        <!-- Подвал -->
+        <footer>
+            <div class="container">
+                <span id="divVsite" property="version"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+                <!-- (property="version") - содерижит версию статьи/сайта -->
+                <span class="grey">Developer:</span> <span property="editor">Marsel Mirge</span>
+                <!-- (property="editor") - содерижит имя человека, редактирующего статью -->
+                <time id="divDate" datetime=""></time>
+                <!-- атрибут (datetime) - содерижит дату, в формате 2010-04-07T17:00 -->
+            </div>
+        </footer>
+
+        <!-- Подключение js после всего контента -->
+        <script src="./js/main.js"></script>
+        
+        <a href="/">
+            <div id="BIT-back"
+                style="position: fixed; right: -10px; bottom: 100px; padding: 6px 16px 4px 6px; background-color: #ffffff; border-radius: 10px; box-shadow: 0px 0px 9px 6px #055977;">
+                <img style="height: 32px;" src="Bit-back.svg">
+            </div>
+        </a>
+
+    </body>
+</html>

@@ -1,0 +1,62 @@
+* {font-family: 'Arial', sans-serif; margin: 0; padding: 0;
+    /* запрет на выделение и подсветку кликов : */ user-select: none; outline: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+-webkit-tap-highlight-color: transparent;
+}
+
+
+body { position: fixed; width: 100%; height: 100%; margin: 0; font-size: 16px; color: #ffffff;
+    background-color: #000000; background-image: url('mainBg.jpg'); background-position: center;
+    overflow: hidden;}
+
+#container { position: absolute; left: -50%; top: 0; width: 100%; height: 100%;
+    transform-style: preserve-3d; perspective: 1000px; z-index: -1;}
+
+#formBox { position: absolute; left: 0; top: 50%; width: 100%; height: 60px; transition: transform 1.5s;
+    transform-style: preserve-3d; transform: rotateY(90deg);}
+
+#formHolder { position: absolute; left: 0; top: -15px; width: 100%; height: 30px;
+    background-image: linear-gradient(0deg, #03011f, #0c0a2f 30%, #03011f); box-shadow: 0px 0px 8px 4px #0c31b5;}
+
+form { display: block; position: absolute; right: -300px; bottom: -185px; /* (height / 2) - 15px */ padding: 20px; width: 560px; height: 360px; text-align: center;
+    background-color: #000000; background-image: url('doorBgForm.jpg'); border: solid 2px #2b3b69; border-radius: 24px; box-shadow: 0px 0px 8px 4px #0c31b5;}
+#message {display: inline-block; margin: 30px auto 0; width: 85%; height: 40px; color:#2afcff; border: solid 2px #2b3b69; border-radius: 20px; font-size: 20px;
+    line-height: 38px; background-color: #343ebd; box-shadow: inset 0px 0px 6px 2px #0711b1;}
+form .block {display: inline-block; width: 45%;}
+
+form input {display: block; margin: 0 auto ; width: 220px; height: 30px; border-radius: 15px; text-align: center; font-weight:700; color: #121212;
+    border: solid 2px #000000; box-shadow: inset 0px 0px 6px 2px #0711b1;}
+form label {display: block; margin: 20px auto 5px;}
+form span {font-size: 12px; color: #00f3f4;}
+input[type="reset"], input[type="button"] {margin-top: 30px; height: 40px; border-radius: 20px; color: #a0b5ff; font-size: 16px; font-weight: 600; text-transform: uppercase;
+    border: solid 3px #7500ff; background-color: #000000; border-radius: 20px; box-shadow: 0px 0px 8px 4px #0e0848; transition: color 0.5s, border 0.5s, box-shadow 0.5s;}
+input[type="reset"]:hover, input[type="button"]:hover { color: #ffffff; border: solid 3px #00ffe2; box-shadow: 0px 0px 8px 4px #084845;}
+
+#indicatorBox { position: absolute; left: 60px; top: -130px; width: 160px; height: 80px; background-color: #000000; background-image: url(panelBg.gif); border: solid 3px #2b3b69;
+    border-radius: 0 0 30px 30px; box-shadow: 0px 0px 8px 4px #594dd2; transition: top 0.5s;}
+
+#doorTop { position: absolute; top: -4px; left: 0; width: 100%; height: 50%; border-bottom: solid 2px #2b3b69; transition: top 1s ease-in-out;
+    background-image: url('doorBgTop.jpg'); background-position: center bottom; box-shadow: 0px 0px 8px 4px #080040;}
+
+#doorBottom { position: absolute; bottom: -4px; left: 0; width: 100%; height: 50%; border-top: solid 2px #2b3b69; transition: bottom 1s ease-in-out;
+    background-image: url('doorBgBottom.jpg'); background-position: center top; box-shadow: 0px 0px 8px 4px #080040;}
+
+#buttonLine { position: absolute; width: 50%; left: 50%; top: 50%; transition: left 1.5s;}
+
+#buttonContainer { position: absolute; left: -120px; top: -34px; width: 240px; height: 60px; background-color: #000000;
+    border: solid 2px #3a4e8b; border-radius: 30px; box-shadow: 0px 0px 8px 4px #594dd2;}
+#buttonContainer::after { content: ""; display: block; position: absolute; bottom: 13px; left: 237px; width: 2000px; height: 30px;
+    background-color: #000000; border-top: solid 2px #3a4e8b; border-bottom: solid 2px #3a4e8b; box-shadow: 12px 0px 8px 4px #594dd2;}
+
+button.start { position: absolute; bottom: 10px; left: 10px; width: 220px; height: 40px; color: #a0b5ff; font-size: 16px; font-weight: 600; text-transform: uppercase;
+    border: solid 3px #7500ff; background-color: #000000; border-radius: 20px; box-shadow: 0px 0px 8px 4px #0e0848;
+    transition: color 0.5s, border 0.5s, box-shadow 0.5s;}
+button.start:hover { color: #ffffff; border: solid 3px #00ffe2; box-shadow: 0px 0px 8px 4px #084845;}
+
+@media (max-width: 720px) {
+    form {right: -160px; bottom: -280px; width: 280px; height: 560px;}
+    #message { height: 80px; margin: 5px auto 0;}
+    form .block { width: 85%;}
+    form label { margin: 15px auto 5px;}
+    input[type="reset"], input[type="button"] { margin-top: 15px;}
+}

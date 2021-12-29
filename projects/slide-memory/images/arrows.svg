@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64-Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="260px" height="260px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 260 260"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <g id="main">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path id="top" fill="#777777" d="M214.585 31.273l-57.008 57.009c-16.665,-11.041 -38.488,-11.041 -55.153,-0.001l-57.009 -57.008c48.564,-41.697 120.606,-41.697 169.17,0zm-84.585 -21.273l0 0 25 50 -25 -12.499 -25 12.499 25 -50z"/>
+  <path id="right" fill="#777777" d="M228.727 214.585l-57.008 -57.009c11.04,-16.665 11.04,-38.488 -0.001,-55.153l57.009 -57.008c41.697,48.563 41.697,120.606 0,169.17zm20.446 -86.201l0 0 -50 25 12.5 -25 -12.5 -25 50 25z"/>
+  <path id="bottom" fill="#777777" d="M157.576 171.719l57.009 57.008c-48.564,41.697 -120.607,41.697 -169.17,0l57.008 -57.009c16.665,11.041 38.488,11.041 55.153,0.001zm-27.576 78.28l0 0 -25 -50 25 12.5 25 -12.5 -25 50z"/>
+  <path id="left" fill="#777777" d="M31.273 45.415l57.008 57.009c-11.04,16.665 -11.04,38.488 0.001,55.153l-57.009 57.008c-41.697,-48.563 -41.697,-120.606 0,-169.17zm-22.099 82.969l0 0 50 -25 -12.499 25 12.499 25 -50 -25z"/>
+  <polygon id="topArrow" fill="#777777" fill-opacity="0" points="131.142,9.997 131.142,9.997 156.142,59.998 131.142,47.498 106.142,59.998 "/>
+  <polygon id="rightArrow" fill="#777777" fill-opacity="0" points="250.315,128.381 250.315,128.381 200.315,153.381 212.815,128.381 200.315,103.381 "/>
+  <polygon id="bottomArrow" fill="#777777" fill-opacity="0" points="131.142,249.997 131.142,249.997 106.142,199.996 131.142,212.496 156.142,199.996 "/>
+  <polygon id="leftArrow" fill="#777777" fill-opacity="0" points="10.316,128.381 10.316,128.381 60.316,103.381 47.816,128.381 60.316,153.381 "/>
+ </g>
+</svg>
