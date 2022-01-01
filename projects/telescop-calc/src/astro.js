@@ -144,7 +144,7 @@ let objects = {
 };
 
 let idTelescopeImg = document.getElementById("telescopeImg");
-let ArrTelescopeImgs = ["./src/images/tr_.svg", "./src/images/tn_.svg", "./src/images/tk_.svg", "./src/images/tr_b.svg", "./src/images/tn_b.svg", "./src/images/tk_b.svg"];
+let ArrTelescopeImgs = ["./src/images/tr_.png", "./src/images/tn_.png", "./src/images/tk_.png", "./src/images/tr_b.png", "./src/images/tn_b.png", "./src/images/tk_b.png"];
 let idTelescopeRadio0 = document.getElementById("tt0");
 let idTelescopeRadio1 = document.getElementById("tt1");
 let idTelescopeRadio2 = document.getElementById("tt2");
