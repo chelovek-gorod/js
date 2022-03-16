@@ -170,7 +170,7 @@ function stackPop(last) {
 
     let splash = document.createElement('img');
     splash.id = 'splash';
-    splash.src = './Images/splash.gif';
+    splash.src = './images/splash.gif';
     container.append(splash);
     setTimeout(() => splash.remove(), 850);
 
@@ -185,21 +185,21 @@ function readyToWork() {
 /* ANIMATION */
 
 const spritesMech = [
-    './Images/m3.svg',
-    './Images/m2.svg',
-    './Images/m1.svg',
-    './Images/m0.svg'
+    './images/m3.svg',
+    './images/m2.svg',
+    './images/m1.svg',
+    './images/m0.svg'
 ];
 
 const spritesConveyor = [
-    './Images/c0.svg',
-    './Images/c1.svg',
-    './Images/c2.svg',
-    './Images/c3.svg',
-    './Images/c4.svg',
-    './Images/c5.svg',
-    './Images/c6.svg',
-    './Images/c7.svg'
+    './images/c0.svg',
+    './images/c1.svg',
+    './images/c2.svg',
+    './images/c3.svg',
+    './images/c4.svg',
+    './images/c5.svg',
+    './images/c6.svg',
+    './images/c7.svg'
 ];
 
 const animationConveyor = {
