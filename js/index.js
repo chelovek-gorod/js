@@ -31,3 +31,6 @@ blocks.forEach(e => {
     }, timer);
     timer += step;
 });
+
+/**/
+document.getElementById("currentYearSpan").innerHTML = new Date().getFullYear() ;
